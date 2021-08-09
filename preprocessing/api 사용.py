@@ -32,3 +32,13 @@ for i in range(1,5):
     print('\t'.join(addrlist))
 
     #32까지 돌아가고 멈춤 
+    
+    #중복을 제거한 리스트 생성 
+    print(len(addrlist))
+new_list = []
+for v in addrlist:
+  if v not in new_list:
+      new_list.append(v)
+print(new_list)
+print(len(new_list))
+    
